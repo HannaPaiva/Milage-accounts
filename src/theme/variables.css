@@ -1,0 +1,402 @@
+/* Ionic Variables and Theming. For more info, please see:
+http://ionicframework.com/docs/theming/ */
+
+/** Ionic CSS Variables **/
+:root {
+	/* primary, secondary, tertiary are button colors -> contrast color is automically the button-text-color */
+
+	--ion-text-color: #000000;
+	--ion-text-color-rgb: 0, 0, 0;
+
+	/* custom colors */
+	--ion-color-default-header: #000000;
+	--ion-color-default-body: #535353;
+	--ion-color-divider: #969696;
+
+	--ion-color-shadow: rgba(0, 0, 0, 0.1);
+
+	--ion-background-color: #ffffff;
+	--ion-color-white-text: #ffffff;
+
+	--ion-color-dropdown-divider: #efefef;
+
+	/** navbar and toolbar**/
+	--ion-color-bar-background: #fafafa;
+	--ion-color-bar-background-rgb: 250, 250, 250;
+	--ion-color-bar-background-contrast: #000000;
+	--ion-color-bar-background-contrast-rgb: 0, 0, 0;
+	--ion-color-bar-background-shade: #dcdcdc;
+	--ion-color-bar-background-tint: #fbfbfb;
+
+	/** primary **/
+	--ion-color-primary: #00acdf;
+	--ion-color-primary-rgb: 0, 172, 223;
+	--ion-color-primary-contrast: #ffffff;
+	--ion-color-primary-contrast-rgb: 255, 255, 255;
+	--ion-color-primary-shade: #0097c4;
+	--ion-color-primary-tint: #1ab4e2;
+
+	/** secondary **/
+	--ion-color-secondary: #e53d00;
+	--ion-color-secondary-rgb: 229, 61, 0;
+	--ion-color-secondary-contrast: #ffffff;
+	--ion-color-secondary-contrast-rgb: 255, 255, 255;
+	--ion-color-secondary-shade: #ca3600;
+	--ion-color-secondary-tint: #e8501a;
+
+	/** tertiary **/
+	--ion-color-tertiary: #ffffff;
+	--ion-color-tertiary-rgb: 255, 255, 255;
+	--ion-color-tertiary-contrast: #000000;
+	--ion-color-tertiary-contrast-rgb: 0, 0, 0;
+	--ion-color-tertiary-shade: #e0e0e0;
+	--ion-color-tertiary-tint: #ffffff;
+
+	/** light **/
+	--ion-color-light: #fafafa;
+	--ion-color-light-rgb: 250, 250, 250;
+	--ion-color-light-contrast: #1f1f1f;
+	--ion-color-light-contrast-rgb: 31, 31, 31;
+	--ion-color-light-shade: #dcdcdc;
+	--ion-color-light-tint: #fbfbfb;
+}
+
+/* duplicate needed for manual theme change */
+body.dark {
+	/* custom colors */
+
+	--ion-color-default-header: #ffffff;
+	--ion-color-default-body: #efefef;
+	--ion-color-divider: #969696;
+	--ion-color-popup-background: #202020;
+
+	--ion-background-color: #000000;
+	--ion-color-white-text: #ffffff;
+
+	--ion-color-bar-background: #202020;
+	--ion-color-bar-background-rgb: 32, 32, 32;
+	--ion-color-bar-background-contrast: #ffffff;
+	--ion-color-bar-background-contrast-rgb: 255, 255, 255;
+	--ion-color-bar-background-shade: #1c1c1c;
+	--ion-color-bar-background-tint: #363636;
+
+	--ion-color-primary: #00acdf;
+	--ion-color-primary-rgb: 0, 172, 223;
+	--ion-color-primary-contrast: #000000;
+	--ion-color-primary-contrast-rgb: 255, 255, 255;
+	--ion-color-primary-shade: #0097c4;
+	--ion-color-primary-tint: #1ab4e2;
+
+	--ion-color-secondary: #e53d00;
+	--ion-color-secondary-rgb: 229, 61, 0;
+	--ion-color-secondary-contrast: #ffffff;
+	--ion-color-secondary-contrast-rgb: 255, 255, 255;
+	--ion-color-secondary-shade: #ca3600;
+	--ion-color-secondary-tint: #e8501a;
+
+	--ion-color-tertiary: #000000;
+	--ion-color-tertiary-rgb: 0, 0, 0;
+	--ion-color-tertiary-contrast: #ffffff;
+	--ion-color-tertiary-contrast-rgb: 255, 255, 255;
+	--ion-color-tertiary-shade: #000000;
+	--ion-color-tertiary-tint: #1a1a1a;
+}
+
+/*
+   * iOS Dark Theme
+   * -------------------------------------------
+   */
+
+.ios body.dark {
+	--ion-background-color: #000000;
+	--ion-background-color-rgb: 0, 0, 0;
+
+	--ion-text-color: #ffffff;
+	--ion-text-color-rgb: 255, 255, 255;
+	--ion-color-white-text: #ffffff;
+
+	--ion-color-step-50: #0d0d0d;
+	--ion-color-step-100: #1a1a1a;
+	--ion-color-step-150: #262626;
+	--ion-color-step-200: #333333;
+	--ion-color-step-250: #404040;
+	--ion-color-step-300: #4d4d4d;
+	--ion-color-step-350: #595959;
+	--ion-color-step-400: #666666;
+	--ion-color-step-450: #737373;
+	--ion-color-step-500: #808080;
+	--ion-color-step-550: #8c8c8c;
+	--ion-color-step-600: #999999;
+	--ion-color-step-650: #a6a6a6;
+	--ion-color-step-700: #b3b3b3;
+	--ion-color-step-750: #bfbfbf;
+	--ion-color-step-800: #cccccc;
+	--ion-color-step-850: #d9d9d9;
+	--ion-color-step-900: #e6e6e6;
+	--ion-color-step-950: #f2f2f2;
+
+	--ion-item-background: #000000;
+
+	--ion-card-background: #1c1c1d;
+}
+
+/*
+   * Material Design Dark Theme
+   * -------------------------------------------
+   */
+.md body.dark {
+	--ion-background-color: #121212;
+	--ion-background-color-rgb: 18, 18, 18;
+
+	--ion-text-color: #ffffff;
+	--ion-text-color-rgb: 255, 255, 255;
+
+	--ion-border-color: #222222;
+
+	--ion-color-step-50: #1e1e1e;
+	--ion-color-step-100: #2a2a2a;
+	--ion-color-step-150: #363636;
+	--ion-color-step-200: #414141;
+	--ion-color-step-250: #4d4d4d;
+	--ion-color-step-300: #595959;
+	--ion-color-step-350: #656565;
+	--ion-color-step-400: #717171;
+	--ion-color-step-450: #7d7d7d;
+	--ion-color-step-500: #898989;
+	--ion-color-step-550: #949494;
+	--ion-color-step-600: #a0a0a0;
+	--ion-color-step-650: #acacac;
+	--ion-color-step-700: #b8b8b8;
+	--ion-color-step-750: #c4c4c4;
+	--ion-color-step-800: #d0d0d0;
+	--ion-color-step-850: #dbdbdb;
+	--ion-color-step-900: #e7e7e7;
+	--ion-color-step-950: #f3f3f3;
+
+	--ion-item-background: #121212;
+
+	--ion-toolbar-background: #1f1f1f;
+
+	--ion-tab-bar-background: #1f1f1f;
+
+	--ion-card-background: #1e1e1e;
+}
+/* ---------------  Modal CSS -------------------------*/
+
+.date-time-picker-modal {
+	top: 22.93853073463268%; /* 514px / 667 = 77,06% --> 100% - 77,06 = 22,93... */
+	box-shadow: 0px -2px 4px var(--ion-color-shadow);
+	border-radius: 20px 20px 0px 0px;
+	color: var(--ion-text-color);
+	background: var(--ion-background-color);
+}
+
+ion-modal {
+	--ion-backdrop-opacity: 0;
+}
+
+.vuejs3-datepicker__calendar.vuejs3-green.datepicker-style {
+	position: absolute;
+	display: block;
+	width: 100% !important;
+	margin-top: 0%;
+	background: var(--ion-background-color);
+}
+.vuejs3-datepicker__calendar-topbar {
+	text-align: center;
+	background-color: var(--ion-color-primary) !important;
+}
+.vuejs3-datepicker__calendar .cell.selected {
+	background: var(--ion-color-primary) !important;
+}
+.vuejs3-datepicker__calendar-topbar {
+	color: var(--ion-color-primary-contrast) !important;
+}
+
+.vuejs3-datepicker__calendar header .next:after {
+	border-top: 1px solid var(--ion-text-color) !important;
+	border-right: 1px solid var(--ion-text-color) !important;
+}
+
+.vuejs3-datepicker__calendar header .prev:after {
+	border-left: 1px solid var(--ion-text-color) !important;
+	border-bottom: 1px solid var(--ion-text-color) !important;
+}
+
+.vuejs3-datepicker__calendar header .next:not(.disabled):hover {
+	background: var(--ion-background-color) !important;
+}
+.vuejs3-datepicker__calendar header .prev:not(.disabled):hover {
+	background: var(--ion-background-color) !important;
+}
+
+/* ---------------  Modal CSS -------------------------*/
+
+/* ---------------  Alert CSS -------------------------*/
+.alert-wrapper.ion-overlay-wrapper {
+	background-color: var(--ion-color-primary-contrast);
+}
+
+.alert-title {
+	color: var(--ion-color-default-header) !important;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+}
+
+.alert-checkbox-label {
+	color: var(--ion-color-default-header) !important;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.alert-checkbox-icon {
+	border: 1px solid var(--ion-color-default-header);
+	box-sizing: border-box;
+	background-color: var(--ion-color-primary-contrast) !important;
+}
+[aria-checked='true'] .alert-checkbox-icon {
+	border: 8px solid #00acdf;
+	box-sizing: border-box;
+}
+
+.alert-button.ion-focusable.ion-activatable.alert-button-role-cancel {
+	display: none;
+}
+
+/* .alert-button-group {
+	position: absolute;
+	height: auto;
+	top: 0%;
+	right: -25%;
+	width: fit-content;
+} */
+/* .alert-button.ion-focusable.ion-activatable {
+	height: auto;
+	width: min-content;
+}
+.alert-button-inner {
+	width: fit-content;
+	height: fit-content;
+} */
+/* ---------------  Alert CSS -------------------------*/
+
+/* --------------- Fonts -------------------------*/
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-Black.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-BlackItalic.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-BlackItalic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-BoldItalic.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-Italic.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-Light.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-Bold.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-LightItalic.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-LightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-Medium.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-MediumItalic.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-MediumItalic.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-Regular.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-ThinItalic.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-ThinItalic.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('@/assets/fonts/Roboto-Thin.woff2') format('woff2'),
+		url('@/assets/fonts/Roboto-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* .dropdown-alert {
+	--background: green;
+} */
